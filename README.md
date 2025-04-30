@@ -30,15 +30,15 @@ A lightweight, database-backed message queue and SMTP mailer system for PHP proj
 
 1. Create the `message_queue` table (SQL provided below)
 2. Add your SMTP credentials in a `.env` file:
-
+```
    SMTP_HOST=smtp.example.com
    SMTP_PORT=587
    SMTP_USER=youruser@example.com
    SMTP_PASS=yourpassword
    FROM_EMAIL=youruser@example.com
    FROM_NAME="Your App"
-   
-3. Schedule `process_messages.php` as a cron job for queued delivery
+```   
+4. Schedule `process_messages.php` as a cron job for queued delivery
 
 ## Example `message_queue` Table Schema
 ```
