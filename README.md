@@ -41,7 +41,7 @@ A lightweight, database-backed message queue and SMTP mailer system for PHP proj
 3. Schedule `process_messages.php` as a cron job for queued delivery
 
 ## Example `message_queue` Table Schema
-
+```
 CREATE TABLE `message_queue` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `message_type` enum('email','sms','push') NOT NULL,
@@ -62,6 +62,7 @@ CREATE TABLE `message_queue` (
   KEY `priority` (`priority`),
   KEY `recipient` (`recipient`)
 ) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+```
 
 ## Credits
 
